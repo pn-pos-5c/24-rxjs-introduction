@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello RxJs</title>
+  <script src="lib\jquery\jquery.js"></script>
+
+  <!-- <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script> -->
+  <!-- <script src="node_modules/rxjs/bundles/rxjs.umd.min.js"></script> -->
+  <script src="lib\rxjs6\rxjs.umd.min.js"></script>
+
+  <!-- <script src="node_modules/@rgrueneis/rxjs-visualizer/rxjs.visualizer.umd.min.js"></script> -->
+  <script src="lib\rxjsvisualizer\rxjs.visualizer.umd.min.js"></script>
+
+  <script src="tutorial.js"></script>
+  <link rel="stylesheet"
+        type="text/css"
+        href="tutorial.css">
+</head>
+
+<body>
+  <h1>Check Console for output...</h1>
+  <table>
+    <tr>
+      <td>Create</td>
+      <td>
+        <button id="btnArray">Array from</button>
+        <button id="btnValues">Values of</button>
+        <button id="btnRange">Range</button>
+        <button id="btnInterval">Timer interval</button>
+        <button id="btnTimer">Timer timer</button>
+        <button id="btnHttp">Http fromPromise</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Events</td>
+      <td>
+        <button id="btnEvent">start listen</button>
+        <button id="btnClick">Click to produce</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Subject</td>
+      <td>
+        <button id="btnCreate">Observer create</button>
+        <button id="btnNext">next</button>
+        <button id="btnError">error</button>
+        <button id="btnComplete">complete</button>
+        <button id="btnUnsubscribe">unsubscribe</button>
+        <button id="btnSubjectBestPractice">best practice</button>
+      </td>
+    <tr>
+      <td></td>
+      <td>
+        <button id="btnBehaviorSubject">BehaviorSubject</button>
+        <button id="btnReplaySubject">ReplaySubject</button>
+        <button id="btnReplay">Replay</button>
+      </td>
+    </tr>
+    </tr>
+    <tr>
+      <td>Operatoren</td>
+      <td>
+        <button id="btnFilter">filter</button>
+        <button id="btnMap">map</button>
+        <button id="btnTake">take/skip</button>
+        <button id="btnDistinct">distinct</button>
+        <button id="btnDistinctUntilChanged">distinct until</button>
+        <button id="btnMax">max/min/count</button>
+        <button id="btnCombined">combined</button>
+        <button id="btnOwn">own operator</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Hot/Cold</td>
+      <td>
+        <button id="btnParallel">parallel</button>
+        <button id="btnDelayed">verzögert</button>
+        <button id="btnPublishConnect">publish+connect</button>
+        <button id="btnPublishRefcount">publish/refcount</button>
+        <button id="btnHotHttp">Bsp http</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Kombinationen</td>
+      <td>
+        <button id="btnDebounce">debounce</button>
+        <button id="btnThrottle">throttle</button>
+        <button id="btnBuffer">buffer</button>
+        <button id="btnCollect">collect for buffer</button>
+      </td>
+    <tr>
+      <td></td>
+      <td>
+        <button id="btnCombineLatest">combineLatest</button>
+        <button id="btnPairwise">pairwise</button>
+        <button id="btnConcat">concat</button>
+        <button id="btnMerge">merge</button>
+        <button id="btnZip">zip</button>
+        <button id="btnForkJoin">forkJoin</button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button id="btnForkJoinHttp">forkJoin http</button>
+        <button id="btnFlatMap">flatMap</button>
+        <button id="btnSwitchMap">switchMap</button>
+        <button id="btnFlatMapHttp">flatMap http</button>
+        <input type="text"
+               placeholder="Id for flatMapHttp"
+               id="txtInputId" />
+      </td>
+    </tr>
+    <tr>
+      <td>Best Practices</td>
+      <td>
+        <button id="btnBestSequence">sequence</button>
+        <button id="btnBestSequenceWithTap">sequence mit Zwischenergebnis</button>
+        <button id="btnBestWaitForAll">Ergebnisse abwarten</button>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <span>Input for debounce/throttle</span>
+        <input type="text"
+               id="txtInput" />
+      </td>
+    </tr>
+  </table>
+
+  <canvas id="canvas"
+          width="700"
+          height="300"></canvas>
+  <div id="logs">Output comes here</div>
+</body>
+
+</html>
